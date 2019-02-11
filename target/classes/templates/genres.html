@@ -1,0 +1,112 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-4.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <style>
+        .table td,
+        .table th {
+            text-align: center;
+        }
+    </style>
+
+    <title>Movie Database - Actors</title>
+
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"><b>MoviesDB</b></a>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/movies">Movies</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/actors">Actors</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/genres">Genre</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container" style="margin-top: 20px;">
+    <div class="row mx-auto">
+        <div class="col col-lg-4">
+
+            <h3 class="display-4">add genre</h3>
+            <div th:if="${editGenre == null}" >
+                <form action="#" th:action="@{/genres}" th:object="${genre}" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" th:field="*{name}" id="name" placeholder="Name of Genre"/>
+                        <span th:if="${#fields.hasErrors('name')}"  class="form-text text-muted" th:errors="*{name}"></span>
+                    </div>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add genre</button>
+                </form>
+            </div>
+
+            <div th:if="${editGenre != null}" >
+                <form action="#" th:action="@{/genre/edit}" th:object="${editGenre}" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text"  class="form-control" th:field="*{genre.name}" id="name" placeholder="Name"/>
+                        <span th:if="${#fields.hasErrors('genre.name')}"  class="form-text text-muted" th:errors="*{genre.name}"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="movies">Movies</label>
+                        <select th:field="*{movies}" class="form-control" id="movies" multiple="multiple" >
+                            <option value=""> -- </option>
+                            <option th:each="movie : ${movies}"
+                                    th:value="${movie.movieId}"
+                                    th:utext="${movie.title}">Options</option>
+                        </select>
+                    </div>
+                    <input type="hidden" th:field="*{genre.genreId}" th:value="*{genre.genreId}" name="genreId" />
+                    <input type="hidden" th:field="*{oldMovies}" th:value="*{oldMovies}" name="oldMovies" />
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Edit</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="col col-lg-8">
+            <h3 class="display-4 float-right">all genres<br/></h3>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col"> Name </th>
+                    <th scope="col"> Action </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:if="${genres.empty}">
+                    <td colspan="2"> No Genres Available </td>
+                </tr>
+                <tr th:each="genre : ${genres}">
+                    <td><b><span th:text="${genre.name}"> Title </span></b></td>
+                    <td>
+                        <a th:href="@{/genre/delete/{id}(id=${genre.genreId})}" style="color: #990000; font-size:22px;"><i title="Delete" class="fas fa-times"></i></a> &nbsp;
+                        <a th:href="@{/genre/edit/{id}(id=${genre.genreId})}" style="color: #006600; font-size:20px;"><i title="Edit" class="fas fa-pencil-alt"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</body>
+</html>
