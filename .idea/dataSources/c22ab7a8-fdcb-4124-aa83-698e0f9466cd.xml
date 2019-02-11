@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Oracle - @localhost">
+  <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.14">
+    <root id="1">
+      <ServerVersion>18.0.0.0.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="ANONYMOUS">
+      <ObjectId>63</ObjectId>
+    </schema>
+    <schema id="3" parent="1" name="APPQOSSYS">
+      <ObjectId>55</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="AUDSYS">
+      <ObjectId>8</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="CTXSYS">
+      <ObjectId>83</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="DBSFWUSER">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DBSNMP">
+      <ObjectId>54</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="DIP">
+      <ObjectId>23</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DVF">
+      <ObjectId>99</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="DVSYS">
+      <ObjectId>1279990</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="GGSYS">
+      <ObjectId>60</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="GSMADMIN_INTERNAL">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="GSMCATUSER">
+      <ObjectId>59</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="GSMUSER">
+      <ObjectId>22</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="LBACSYS">
+      <ObjectId>97</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="MDDATA">
+      <ObjectId>95</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="MDSYS">
+      <ObjectId>89</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="MOVIES">
+      <ObjectId>102</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.17:14:30</ModifiedTimestamp>
+      <IntrospectionTimestamp>2019-01-29.17:19:19</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="19" parent="1" name="OJVMSYS">
+      <ObjectId>81</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="OLAPSYS">
+      <ObjectId>92</ObjectId>
+    </schema>
+    <schema id="21" parent="1" name="ORACLE_OCM">
+      <ObjectId>39</ObjectId>
+    </schema>
+    <schema id="22" parent="1" name="ORDDATA">
+      <ObjectId>86</ObjectId>
+    </schema>
+    <schema id="23" parent="1" name="ORDPLUGINS">
+      <ObjectId>87</ObjectId>
+    </schema>
+    <schema id="24" parent="1" name="ORDSYS">
+      <ObjectId>85</ObjectId>
+    </schema>
+    <schema id="25" parent="1" name="OUTLN">
+      <ObjectId>13</ObjectId>
+    </schema>
+    <schema id="26" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+      <CreatedTimestamp>2018-02-07.21:20:31</CreatedTimestamp>
+      <ModifiedTimestamp>2018-10-15.18:50:41</ModifiedTimestamp>
+      <IntrospectionTimestamp>2019-01-29.17:19:24</IntrospectionTimestamp>
+    </schema>
+    <schema id="27" parent="1" name="REMOTE_SCHEDULER_AGENT">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="28" parent="1" name="SI_INFORMTN_SCHEMA">
+      <ObjectId>88</ObjectId>
+    </schema>
+    <schema id="29" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="30" parent="1" name="SYS$UMF">
+      <ObjectId>46</ObjectId>
+    </schema>
+    <schema id="31" parent="1" name="SYSBACKUP">
+      <ObjectId>2147483617</ObjectId>
+    </schema>
+    <schema id="32" parent="1" name="SYSDG">
+      <ObjectId>2147483618</ObjectId>
+    </schema>
+    <schema id="33" parent="1" name="SYSKM">
+      <ObjectId>2147483619</ObjectId>
+    </schema>
+    <schema id="34" parent="1" name="SYSRAC">
+      <ObjectId>2147483620</ObjectId>
+    </schema>
+    <schema id="35" parent="1" name="SYSTEM">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="36" parent="1" name="WMSYS">
+      <ObjectId>72</ObjectId>
+    </schema>
+    <schema id="37" parent="1" name="XDB">
+      <ObjectId>62</ObjectId>
+    </schema>
+    <schema id="38" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="39" parent="18" name="ACTOR_SEQ">
+      <ObjectId>74916</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <SequenceIdentity>1+50</SequenceIdentity>
+    </sequence>
+    <sequence id="40" parent="18" name="GENRE_SEQ">
+      <ObjectId>74917</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <SequenceIdentity>1+50</SequenceIdentity>
+    </sequence>
+    <sequence id="41" parent="18" name="MOVIE_SEQ">
+      <ObjectId>74918</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <SequenceIdentity>1+50</SequenceIdentity>
+    </sequence>
+    <table id="42" parent="18" name="ACTOR">
+      <ObjectId>74919</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.17:14:02</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="43" parent="18" name="GENRE">
+      <ObjectId>74921</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="44" parent="18" name="MOVIE">
+      <ObjectId>74923</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="45" parent="18" name="MOVIE_ACTORS">
+      <ObjectId>74925</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.17:14:30</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <table id="46" parent="18" name="MOVIE_GENRES">
+      <ObjectId>74926</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TemporaryPreserve>1</TemporaryPreserve>
+    </table>
+    <column id="47" parent="42" name="ACTOR_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="42" name="AGE">
+      <Position>2</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <column id="49" parent="42" name="FIRST_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="50" parent="42" name="GENDER">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="51" parent="42" name="LAST_NAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <index id="52" parent="42" name="SYS_C008386">
+      <ObjectId>74920</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>ACTOR_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="53" parent="42" name="SYS_C008386">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>ACTOR_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008386</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <trigger id="54" parent="42" name="ACTOR_TRG">
+      <ObjectId>74937</ObjectId>
+      <SourceTextLength>168</SourceTextLength>
+      <DependsOnIds>144,1754,74916</DependsOnIds>
+      <CreatedTimestamp>2019-01-29.17:12:13</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.17:14:02</ModifiedTimestamp>
+      <Events>I</Events>
+      <Turn>before-row</Turn>
+    </trigger>
+    <column id="55" parent="43" name="GENRE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="56" parent="43" name="NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <index id="57" parent="43" name="SYS_C008388">
+      <ObjectId>74922</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>GENRE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="58" parent="43" name="UK_CTFFRBU4484FT8DLSA5VMQDKA">
+      <ObjectId>74927</ObjectId>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>NAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="59" parent="43" name="SYS_C008388">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>GENRE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008388</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <key id="60" parent="43" name="UK_CTFFRBU4484FT8DLSA5VMQDKA">
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>NAME</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>UK_CTFFRBU4484FT8DLSA5VMQDKA</UnderlyingIndexName>
+    </key>
+    <column id="61" parent="44" name="MOVIE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="62" parent="44" name="DURATION">
+      <Position>2</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <column id="63" parent="44" name="IMG_URL">
+      <Position>3</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="64" parent="44" name="TITLE">
+      <Position>4</Position>
+      <DataType>VARCHAR2(255 char)|0us</DataType>
+    </column>
+    <column id="65" parent="44" name="YEAR">
+      <Position>5</Position>
+      <DataType>NUMBER(10 digit)|0s</DataType>
+    </column>
+    <index id="66" parent="44" name="SYS_C008390">
+      <ObjectId>74924</ObjectId>
+      <NameSurrogate>1</NameSurrogate>
+      <CreatedTimestamp>2019-01-29.13:22:43</CreatedTimestamp>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <TablespaceName>USERS</TablespaceName>
+      <ColNames>MOVIE_ID</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="67" parent="44" name="SYS_C008390">
+      <NameSurrogate>1</NameSurrogate>
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>MOVIE_ID</ColNames>
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <UnderlyingIndexName>SYS_C008390</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="68" parent="45" name="MOVIE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="45" name="ACTOR_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="70" parent="45" name="FKBSTO8YEF4BTOKHVEIHMKG8876">
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>MOVIE_ID</ColNames>
+      <RefSchemaName>MOVIES</RefSchemaName>
+      <RefTableName>MOVIE</RefTableName>
+      <RefKeyName>SYS_C008390</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="71" parent="45" name="FKCIFY69O6K32MJ8HOYA3SKQGHV">
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>ACTOR_ID</ColNames>
+      <RefSchemaName>MOVIES</RefSchemaName>
+      <RefTableName>ACTOR</RefTableName>
+      <RefKeyName>SYS_C008386</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <column id="72" parent="46" name="MOVIE_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="73" parent="46" name="GENRE_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(19 digit)|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <foreign-key id="74" parent="46" name="FKS2XL3SIRBON75MJCONGWHRBI3">
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>MOVIE_ID</ColNames>
+      <RefSchemaName>MOVIES</RefSchemaName>
+      <RefTableName>MOVIE</RefTableName>
+      <RefKeyName>SYS_C008390</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+    <foreign-key id="75" parent="46" name="FKNUP1HM4TK18OM6DGAWFGO5AY9">
+      <ModifiedTimestamp>2019-01-29.13:22:43</ModifiedTimestamp>
+      <ColNames>GENRE_ID</ColNames>
+      <RefSchemaName>MOVIES</RefSchemaName>
+      <RefTableName>GENRE</RefTableName>
+      <RefKeyName>SYS_C008388</RefKeyName>
+      <OnDelete>restrict</OnDelete>
+    </foreign-key>
+  </database-model>
+</dataSource>
